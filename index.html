@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body style="background-color: rgb(23, 218, 253);">
+
+  <!-- As a heading -->
+  <nav class="navbar bg-body-tertiary" style="color: rgb(54, 54, 228);font-size: 50px;">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"><span style="color: rgb(6, 6, 167);">Pay</span>roll</span>
+    </div>
+  </nav>
+  <!-- As a heading -->
+  <nav class="navbar bg-body-tertiary" style="margin-top: 40px;font-size: 50px;">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">NET PAY CALCULATOR</span>
+    </div>
+  </nav>
+  <p>Enter the gross salary below amount to calculate your net amount</p>
+  <form action="" id="my_form">
+    <label for="Basic salary:">Basic salary:</label>
+    <input type="number" id="basic_salary">
+    <label for="Benefits:">Benefits:</label>
+    <input type="number" id="benefits">
+    <input type="submit" value="CALCULATE" style="background-color: blue;">
+    <input type="reset" value="RESET" style="background-color: aqua;">
+  </form><br><br>
+  <table id="my_table" border="1" style="width: 600px;height: 300px;">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Results</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gross_salary</td>
+        <td id="gross"></td>
+      </tr>
+      <tr>
+        <td>NSSF</td>
+        <td id="NSSF"></td>
+      </tr>
+      <tr>
+        <td>NHDF</td>
+        <td id="NHDF"></td>
+      </tr>
+      <tr>
+        <td>Final_Payee</td>
+        <td id="Final_Payee"></td>
+      </tr>
+      <tr>
+        <td>NHIF</td>
+        <td id="NHIF"></td>
+      </tr>
+      <tr>
+        <td>Taxable_income</td>
+        <td id="Taxable_income"></td>
+      </tr>
+      <tr>
+        <td>Net_Pay</td>
+        <td id="Net_pay"></td>
+      </tr>
+    </tbody>
+
+  </table>
+  <script src="index.js"></script>
+
+  
+</body>
+
+</html>
